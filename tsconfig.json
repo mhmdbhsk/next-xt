@@ -1,5 +1,14 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/layouts/*": ["components/layouts/*"],
+      "@components/ui/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@constructors/*": ["constructors/*"],
+      "@global": ["global/index.ts"],
+      "@global/*": ["global/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,6 +24,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "./custom.d.ts",
+    "./next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/*"
+  ],
   "exclude": ["node_modules"]
 }
