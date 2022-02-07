@@ -1,7 +1,10 @@
 import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 import Button from './Button';
 
 export default function AccessDenied() {
+  const router = useRouter();
+
   return (
     <div className='pt-8 p-4 space-y-8'>
       <div className='space-y-2'>
@@ -11,7 +14,10 @@ export default function AccessDenied() {
 
       <p>You must be signed in to view this page</p>
 
-      <Button onClick={() => signIn()}>Sign In</Button>
+      <div className='space-x-2'>
+        <Button onClick={() => signIn()}>Sign In</Button>
+        <Button onClick={() => router.push('/')}>Back to Home</Button>
+      </div>
     </div>
   );
 }

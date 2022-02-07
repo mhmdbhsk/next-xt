@@ -32,4 +32,6 @@ const makeStore = wrapMakeStore(() =>
   )
 );
 
-export const wrapper = createWrapper(makeStore, { debug: true });
+export const wrapper = createWrapper(makeStore, {
+  debug: process.env.NODE_ENV !== 'production' ?? true,
+});
