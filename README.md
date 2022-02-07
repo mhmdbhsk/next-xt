@@ -20,8 +20,12 @@ Take a look on live preview [here](https://next-xt.bhsk.dev)!
 
 ## To Do
 
-- [ ] Testing
+- [x] ~~Init Project~~
+- [x] ~~Tailwind Setup~~
+- [x] ~~Wrap App with Redux~~
+- [x] ~~Persisting Redux State~~
 - [ ] Internationalization
 - [ ] SEO
 - [ ] Performance Improvement
 - [ ] DX Improvement
+- [ ] Testing

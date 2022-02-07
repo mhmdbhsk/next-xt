@@ -6,8 +6,6 @@ import Page from './components';
 import { updateDataHome } from './store/action-creators';
 
 export const getProps = wrapper.getServerSideProps((store) => async () => {
-  console.log('Mantab jiwa');
-
   await fetch('https://jsonplaceholder.typicode.com/posts')
     .then((response) => response.json())
     .then((json) => store.dispatch(updateDataHome(json)));

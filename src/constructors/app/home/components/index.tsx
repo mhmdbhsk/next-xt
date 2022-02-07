@@ -9,13 +9,12 @@ type HomeProps = HomeReduxProps;
 const Home: NextPage<HomeProps> = ({ data, home, theme, handler }) => {
   const router = useRouter();
 
-  console.log(home);
-
   return (
     <div className='container max-w-xl m-auto'>
-      <div className='px-4 py-16 flex flex-col items-center'>
-        <span className='text-3xl font-bold'>An Opiniated Next JS Project</span>
-        <span>Created by Muhammad Bhaska </span>
+      <div className='px-4 py-16 flex flex-col items-center space-y-2'>
+        <span className='text-3xl font-bold'>▲ next-xt</span>
+        <span className='text-xl font-bold'>An Opiniated Next JS Project</span>
+        <span className='text-xs'>Made by Muhammad Bhaska </span>
       </div>
 
       <div className='p-4 space-y-8 flex flex-col'>
@@ -34,7 +33,8 @@ const Home: NextPage<HomeProps> = ({ data, home, theme, handler }) => {
         <div className='flex flex-col space-y-2'>
           <span className='text-xl font-bold'>App Theme</span>
           <span className='text-xs'>
-            ( Persisting Redux State using next-redux-wrapper )
+            ( Persisting Redux State using next-redux-wrapper and
+            next-redux-cookie-wrapper )
           </span>
 
           <div className='flex space-x-4 items-center'>
@@ -59,6 +59,9 @@ const Home: NextPage<HomeProps> = ({ data, home, theme, handler }) => {
           <div className='flex space-x-4 items-center'>
             <Button onClick={() => router.push('/profile')}>
               Go to Profile Page
+            </Button>
+            <Button onClick={() => router.push('/protected')}>
+              Go to Protected Page
             </Button>
           </div>
         </div>
