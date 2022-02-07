@@ -15,7 +15,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       ref={ref}
       {...rest}
     >
-      {console.log(className)}
       {children}
     </button>
   )
