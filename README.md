@@ -24,6 +24,7 @@ Take a look on live preview [here](https://next-xt.bhsk.dev)!
 - [x] ~~Tailwind Setup~~
 - [x] ~~Wrap App with Redux~~
 - [x] ~~Persisting Redux State~~
+- [x] ~~Authentication~~
 - [ ] Internationalization
 - [ ] SEO
 - [ ] Performance Improvement
