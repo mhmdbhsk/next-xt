@@ -29,7 +29,7 @@ export default function SignIn({ providers }: SignInProps) {
             </div>
           ))}
           <Button
-            className='w-full bg-white hover:bg-gray-100 shadow-none text-gray-400 hover:text-black'
+            className='w-full !bg-white hover:!bg-gray-100 shadow-none text-gray-400 hover:text-black'
             onClick={() => router.back()}
           >
             Back
